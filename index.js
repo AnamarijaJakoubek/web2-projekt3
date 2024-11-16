@@ -1,7 +1,7 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
-canvas.width = window.innerWidth - 150;
+canvas.width = window.innerWidth - 170;
 canvas.height = window.innerHeight - 20;
 
 // Parametri igre
