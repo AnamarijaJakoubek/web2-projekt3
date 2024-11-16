@@ -6,7 +6,7 @@ canvas.height = window.innerHeight - 20;
 
 // Parametri igre
 const brickRows = 8;
-const brickColumns = 15;
+const brickColumns = 10;
 const ballSpeed = 4;
 
 let score = 0;
@@ -79,10 +79,14 @@ function drawBall() {
 
 // Funkcija za crtanje cigli
 function drawBricks() {
+
+    const totalBricksWidth = (brickColumns * brickWidth) + ((brickColumns - 1) * 10); 
+    const offsetX = (canvas.width - totalBricksWidth) / 2;
+
     for (let c = 0; c < brickColumns; c++) {
         for (let r = 0; r < brickRows; r++) {
             if (bricks[c][r].isActive === 1) {
-                let brickX = c * (brickWidth + 10) + 30;
+                let brickX = c * (brickWidth + 10) + offsetX;
                 let brickY = r * (brickHeight + 10) + 30;
                 bricks[c][r].x = brickX;
                 bricks[c][r].y = brickY;
