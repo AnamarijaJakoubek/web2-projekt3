@@ -6,7 +6,7 @@ canvas.height = window.innerHeight - 20;
 
 // Parametri igre
 const brickRows = 8;
-const brickColumns = 17;
+const brickColumns = 15;
 const ballSpeed = 4;
 
 let score = 0;
