@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="hitSound" src="sounds/hitBrick.wav" preload="auto"></audio>
+    <audio id="gameOverSound" src="sounds/gameOver.wav" preload="auto"></audio>
+    <audio id="victorySound" src="sounds/victory.wav" preload="auto"></audio>
+    <audio id="levelUpSound" src="sounds/levelUp.mp3" preload="auto"></audio>
+
+
+    <canvas id="gameCanvas"></canvas>
+      
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+          <h2 id="modalTitle"></h2>
+          <button id="restartButton">New game</button>
+        </div>
+    </div>
+      
+    <script src="index.js"></script>
+</body>
+</html>
