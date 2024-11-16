@@ -1,15 +1,13 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
+canvas.width = window.innerWidth - 170;
+canvas.height = window.innerHeight - 20;
+
 // Parametri igre
 const brickRows = 8;
 const brickColumns = 10;
 const ballSpeed = 4;
-
-const totalBricksWidth = (brickColumns * brickWidth) + ((brickColumns - 1) * 10); 
-
-canvas.width = totalBricksWidth + 40;
-canvas.height = window.innerHeight - 20;
 
 let score = 0;
 let highScore = localStorage.getItem('highScore') || 0;
@@ -82,6 +80,7 @@ function drawBall() {
 // Funkcija za crtanje cigli
 function drawBricks() {
 
+    const totalBricksWidth = (brickColumns * brickWidth) + ((brickColumns - 1) * 10); 
     const offsetX = (canvas.width - totalBricksWidth) / 2;
 
     for (let c = 0; c < brickColumns; c++) {
