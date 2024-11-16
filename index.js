@@ -1,8 +1,8 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
-canvas.width = window.innerWidth - 20;
-canvas.height = window.innerHeight - 20;
+canvas.width = window.innerWidth - 100;
+canvas.height = window.innerHeight - 100;
 
 // Parametri igre
 const brickRows = 8;
